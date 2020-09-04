@@ -2,7 +2,7 @@
 
 # format - $name|$suffix|$models
 readonly VARIANTS=(
-  'all||en da de el es fr it lt nb nl pl pt ro'
+  'all||en_core_web_sm da_core_news_sm de_core_news_sm el_core_news_sm es_core_news_sm fr_core_news_sm it_core_news_sm lt_core_news_sm nb_core_news_sm nl_core_news_sm pl_core_news_sm pt_core_news_sm ro_core_news_sm'
   'da||da_core_news_sm'
   'da|.md|da_core_news_md'
   'da|.lg|da_core_news_lg'
