@@ -2,6 +2,11 @@ sudo: required
 
 language: generic
 
+env:
+  global:
+      - secure: MOYYuw2rdEnZX8vD40suPzeRfHNZXbBPlnkvFjgL6oEM5szIRMPUrvoCGHpg2hKaUjLL+zwvWXq0JUfnceC8CVxXPhQ7QH19cKaT7sxNSKVyqCvDZI9uCfOUGimtUOffdM8ASd13LoNBu64pqocL/AbksizZzkttFQT/BQBgQ/H4K+lLvEktvgPs6vMrTD+HXEx6JFbY1xEp6DR7RKivjRUdoOiWq/IQuRuBcc6C1iwVZWRUJ4WjND4ijACblJwao8lq20rImfjCtiJS27zezWIOW1BIJpxa3HPmB0apcMjTadG3Pdt47d8cWtMQXGFtWcysXhog6rlPkIXWdEbFxs0abzAxdifslgbEKY6A3i3KVSo/x6asCS1GlqRrueE6XPOetKqtU9KKxy2GW4HUYnhBISsuQc8ETJYDW9KxObGDYo5oruI21tK1YxbD9tvM237z86JzVWfNZ9BraR+lymwYwyeYAzAzdG5PO6vtB90Jo2fmF8IAGRmomd2E7ua9g2j3LkYEACTtmjfzufk8Tg9bewNQX+e1CBknlsDPwnamPoWeCAi+oY8/HgM2/kmnZUdcD0P4trEjxAblp1FU4h/90VL5MZjJSwUTwMXWjKYA7sEKPNl+U7xmAIweAFtrBGYLjXWVLAyX3cifbRxdxTNarAxvfwLL1+iq/jaUQ2c=
+      - secure: HoIoctbRiJuYUVaN2bjy5UuPku6qVCBCDxWetMJdg4ZsjDXKZhJavNXakN/stLTBQeTR9w0jJk+dT8i7evEtiC7EsTPSpks8iggpe+XVbFXdg4dqC0PqNu6iSOxANSjRfowtqasrSqddWfsqNdOVm1VVP1Ft3VGaQTOdmkApOT1TTCQngM+ji5D88OnOdNowIvdVX87ki1LwRhfFOLYkOsistkhBWmxICRCFwQ8zlMYsBhHXzTSPl6u01sMn2zO/8pp38UzZ0wcbZb1Oe3HvxCL+5Vzkqw7/bUwO1YMWt1nHKIL7rdy5PzolsOlFG7aoYoU2XAVmWM79x8D1LHS+MwPO6Gaf1zRlTDZiHQC174vf4TQegndOhqkRMk8sBOrRMxNzh7ugbVE7yX3yFfMQ/fUXKwUHv2+EJBzaDpnxplvFvFCW/EDce1fPD4WYd6eYFLnDk5DtwCfbmjPfzA6swdz6Nadq1u52HIPcAhrsBwq4GjIiEj1o7vDvadsUmV0BrDouwjTRy+EQ+VhbUPL6pJ0suYtTBKvulk/h14onVSKxLEn9PEUMTCdMyi9RqwffeAytgRA6yxzSNOOl3f4sQU4bGK878OqqpWymYCO3TukuF9/fZemcO/I/XtjKoqhXG4DevsUuimBShQh1iC5ca6IYShp5lrXlSDS2L6rwwC0=
+
 services:
   - docker
 
@@ -52,7 +57,6 @@ install:
   - travis_wait 30 docker build -t jcpaiva/apicy:ro_lg -f build/ro/Dockerfile.lg .
   - travis_wait 30 docker build -t jcpaiva/apicy:ro_md -f build/ro/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:all   -f build/all/Dockerfile   .
-
 after_success:
   - docker push jcpaiva/apicy:base
   - docker push jcpaiva/apicy:da
