@@ -1,0 +1,9 @@
+FROM jcpaiva/apicy:base
+
+LABEL maintainer="José Carlos Paiva <josepaiva94@gmail.com>"
+LABEL description="apiCy image with the following pretrained statistical models available: {{MODELS}}."
+
+
+ENV MODELS "{{MODELS}}"
+
+RUN poetry run download-models

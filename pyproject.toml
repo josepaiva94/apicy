@@ -1,0 +1,36 @@
+[tool.poetry]
+name = 'apicy'
+version = '0.1.0'
+description = 'apiCy is a containerized Docker REST microservice for providing spaCy as a service.'
+authors = ['José Carlos Paiva <josepaiva94@gmail.com>']
+
+readme = 'README.md'
+
+repository = 'https://github.com/handspy/apicy'
+homepage = 'https://github.com/handspy/apicy'
+include = [
+    'README.md'
+]
+keywords = ['spacy', 'rest api', 'docker']
+
+[tool.poetry.dependencies]
+python = '^3.7'
+fastapi = '^0.61.0'
+hypercorn = '^0.10.2'
+spacy = '^2.3.2'
+spacy-lookups-data = '^0.3.2'
+pydantic = '^1.6.1'
+
+[tool.poetry.dev-dependencies]
+pytest = '^6.0.0'
+flake8 = '^3.8.3'
+
+[tool.poetry.scripts]
+download-models = 'apicy.scripts.download:download_models'
+
+[tool.poetry.extras]
+test = ["pytest"]
+
+[build-system]
+requires = ['poetry>=1.1.0b2']
+build-backend = 'poetry.core.masonry.api'
