@@ -18,84 +18,84 @@ install:
   - chmod +x generate-variants.sh
   - bash generate-variants.sh
   - travis_wait 30 docker build -t jcpaiva/apicy:da    -f build/da/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:da_lg -f build/da/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:da_md -f build/da/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:da-lg -f build/da/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:da-md -f build/da/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:de    -f build/de/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:de_lg -f build/de/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:de_md -f build/de/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:de-lg -f build/de/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:de-md -f build/de/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:el    -f build/el/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:el_lg -f build/el/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:el_md -f build/el/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:el-lg -f build/el/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:el-md -f build/el/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:en    -f build/en/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:en_lg -f build/en/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:en_md -f build/en/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:en-lg -f build/en/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:en-md -f build/en/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:es    -f build/es/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:es_lg -f build/es/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:es_md -f build/es/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:es-lg -f build/es/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:es-md -f build/es/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:fr    -f build/fr/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:fr_lg -f build/fr/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:fr_md -f build/fr/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:fr-lg -f build/fr/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:fr-md -f build/fr/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:it    -f build/it/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:it_lg -f build/it/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:it_md -f build/it/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:it-lg -f build/it/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:it-md -f build/it/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:lt    -f build/lt/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:lt_lg -f build/lt/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:lt_md -f build/lt/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:lt-lg -f build/lt/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:lt-md -f build/lt/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:nb    -f build/nb/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:nb_lg -f build/nb/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:nb_md -f build/nb/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:nb-lg -f build/nb/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:nb-md -f build/nb/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:nl    -f build/nl/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:nl_lg -f build/nl/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:nl_md -f build/nl/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:nl-lg -f build/nl/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:nl-md -f build/nl/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:pl    -f build/pl/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:pl_lg -f build/pl/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:pl_md -f build/pl/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:pl-lg -f build/pl/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:pl-md -f build/pl/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:pt    -f build/pt/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:pt_lg -f build/pt/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:pt_md -f build/pt/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:pt-lg -f build/pt/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:pt-md -f build/pt/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:ro    -f build/ro/Dockerfile    .
-  - travis_wait 30 docker build -t jcpaiva/apicy:ro_lg -f build/ro/Dockerfile.lg .
-  - travis_wait 30 docker build -t jcpaiva/apicy:ro_md -f build/ro/Dockerfile.md .
+  - travis_wait 30 docker build -t jcpaiva/apicy:ro-lg -f build/ro/Dockerfile.lg .
+  - travis_wait 30 docker build -t jcpaiva/apicy:ro-md -f build/ro/Dockerfile.md .
   - travis_wait 30 docker build -t jcpaiva/apicy:all   -f build/all/Dockerfile   .
 after_success:
   - docker push jcpaiva/apicy:base
   - docker push jcpaiva/apicy:da
-  - docker push jcpaiva/apicy:da_lg
-  - docker push jcpaiva/apicy:da_md
+  - docker push jcpaiva/apicy:da-lg
+  - docker push jcpaiva/apicy:da-md
   - docker push jcpaiva/apicy:de
-  - docker push jcpaiva/apicy:de_lg
-  - docker push jcpaiva/apicy:de_md
+  - docker push jcpaiva/apicy:de-lg
+  - docker push jcpaiva/apicy:de-md
   - docker push jcpaiva/apicy:el
-  - docker push jcpaiva/apicy:el_lg
-  - docker push jcpaiva/apicy:el_md
+  - docker push jcpaiva/apicy:el-lg
+  - docker push jcpaiva/apicy:el-md
   - docker push jcpaiva/apicy:en
-  - docker push jcpaiva/apicy:en_lg
-  - docker push jcpaiva/apicy:en_md
+  - docker push jcpaiva/apicy:en-lg
+  - docker push jcpaiva/apicy:en-md
   - docker push jcpaiva/apicy:es
-  - docker push jcpaiva/apicy:es_lg
-  - docker push jcpaiva/apicy:es_md
+  - docker push jcpaiva/apicy:es-lg
+  - docker push jcpaiva/apicy:es-md
   - docker push jcpaiva/apicy:fr
-  - docker push jcpaiva/apicy:fr_lg
-  - docker push jcpaiva/apicy:fr_md
+  - docker push jcpaiva/apicy:fr-lg
+  - docker push jcpaiva/apicy:fr-md
   - docker push jcpaiva/apicy:it
-  - docker push jcpaiva/apicy:it_lg
-  - docker push jcpaiva/apicy:it_md
+  - docker push jcpaiva/apicy:it-lg
+  - docker push jcpaiva/apicy:it-md
   - docker push jcpaiva/apicy:lt
-  - docker push jcpaiva/apicy:lt_lg
-  - docker push jcpaiva/apicy:lt_md
+  - docker push jcpaiva/apicy:lt-lg
+  - docker push jcpaiva/apicy:lt-md
   - docker push jcpaiva/apicy:nb
-  - docker push jcpaiva/apicy:nb_lg
-  - docker push jcpaiva/apicy:nb_md
+  - docker push jcpaiva/apicy:nb-lg
+  - docker push jcpaiva/apicy:nb-md
   - docker push jcpaiva/apicy:nl
-  - docker push jcpaiva/apicy:nl_lg
-  - docker push jcpaiva/apicy:nl_md
+  - docker push jcpaiva/apicy:nl-lg
+  - docker push jcpaiva/apicy:nl-md
   - docker push jcpaiva/apicy:pl
-  - docker push jcpaiva/apicy:pl_lg
-  - docker push jcpaiva/apicy:pl_md
+  - docker push jcpaiva/apicy:pl-lg
+  - docker push jcpaiva/apicy:pl-md
   - docker push jcpaiva/apicy:pt
-  - docker push jcpaiva/apicy:pt_lg
-  - docker push jcpaiva/apicy:pt_md
+  - docker push jcpaiva/apicy:pt-lg
+  - docker push jcpaiva/apicy:pt-md
   - docker push jcpaiva/apicy:ro
-  - docker push jcpaiva/apicy:ro_lg
-  - docker push jcpaiva/apicy:ro_md
+  - docker push jcpaiva/apicy:ro-lg
+  - docker push jcpaiva/apicy:ro-md
   - docker push jcpaiva/apicy:all
